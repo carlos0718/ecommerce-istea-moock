@@ -15,7 +15,7 @@ export function renderCards() {
 	].forEach((product) => {
 		let card = `<div class="col-4">
 						<div class="card">
-							<img src="..." class="card-img-top" alt="...">
+							<img src="" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h3 class="card-title">Title</h3>
 								<p class="card-text">Text</p>
@@ -28,25 +28,6 @@ export function renderCards() {
 		cardContainer.innerHTML += card;
 	});
 }
-
-const img = `<img src='...' class='card-img-top' alt='...'>`;
-
-const cardBody = `<div class='card-body'>
-					<h3 class='card-title'>Title</h3>
-					<p class='card-text'>Text</p>
-				</div>`;
-
-const button = `<div>
-					<button onclick='alert("clicked id 1")'>click me!</button>
-				</div>`;
-
-const card = `<div class='col-4'>
-				<div class='card'>
-					${img}
-					${cardBody}
-					${button}
-				</div>
-			</div>`;
 
 /**
  * another approach
